@@ -1,0 +1,150 @@
+body{
+  background-color: white;
+  color: hsl(208, 11%, 55%);
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 2;
+  font-size: 18px;
+}
+h1,h2,h3,h4{
+  color: black;
+  font-family: 'Poppins', sans-serif;
+}
+header{
+  padding: 50px 60px;
+}
+i{
+  font-size: 22px;
+  padding: 5px;
+  color: white;
+}
+.header{
+  background-color: hsl(193, 100%, 96%);
+  background-image: url('images/bg-hero-desktop.svg');
+}
+.first{
+  margin: 40px 70px;
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: 1fr 1fr;
+}
+.first-section{
+  margin-top: 30px;
+  padding-right: 160px;
+}
+.second-section{
+  width: 89%;
+  position: relative;
+  left: 2%;
+  margin: 60px;
+  box-sizing: border-box;
+  border-radius: 15px;
+  padding: 30px 90px;
+  border: solid 1px whitesmoke;
+  box-shadow: 0.3px 0.6px 4px;
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: 1fr 1fr;
+}
+.third{
+  position: relative;
+  z-index: 1;
+  width: 46%;
+  top: 60px;
+  left:26%;
+  text-align: center;
+  padding: 15px;
+  background-color: white;
+  border-radius: 10px;
+  border: solid 1px whitesmoke;
+  box-shadow: 0.3px 0.6px 1px;
+}
+.img{
+  width: 100%;
+}
+.btn{
+  font-size: 14px;
+  padding: 14px 45px;
+  border-radius: 30px;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+.btn-one{
+  float: right;
+  margin-top: 8px;
+  border: solid 1px whitesmoke;
+  background-color: white;
+}
+.btn-second, .btn-third{
+  color: white;
+  border: solid 1px hsl(322, 100%, 66%);
+  background-color: hsl(322, 100%, 66%);
+}
+.footer{
+  padding: 100px 50px 40px;
+  color: white;
+  background-color: hsl(192, 100%, 9%);
+}
+.footer-information{
+  font-size: 16px;
+  text-align: left;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 400px repeat(3, 1fr);
+}
+.end{
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 30px 1fr;
+}
+.copy{
+  font-size: 14px;
+  float:right;
+}
+@media(max-width: 700px){
+  header{
+    padding: 8px;
+  }
+  .header{
+    background-color: hsl(193, 100%, 96%);
+    background-image: url('images/bg-hero-mobile.svg');
+  }
+  .section{
+    text-align: center;
+  }
+  .first{
+    grid-template-columns: 1fr;
+  }
+  .first-section{
+    padding: 10px;
+  }
+ .dsimage{
+   padding: 20px 0;
+ }
+  .second-section{
+    left: 1%;
+    margin: 35px;
+    grid-template-columns: 1fr;
+  }
+    .third{
+      text-align: center;
+      font-size: 15px;
+      left: 2%;
+      width: 89%;
+    }
+    .btn{
+      padding: 12px 40px;
+    }
+    .social, .copy{
+      padding-top: 10px;
+      float: none;
+      text-align: center;
+    }
+    .footer{
+      padding-left: 20px;
+    }
+  .footer-information{
+    display: block;
+  }
+}
